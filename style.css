@@ -1,0 +1,171 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  background-color: #3586ff;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 50px 0px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+.main {
+  display: grid;
+  gap: 30px;
+  position: absolute;
+  text-align: center;
+  margin: auto;
+  width: auto;
+  height:max-content;
+  justify-items: center;
+}
+
+.banner {
+  margin: 100px 0px;
+  font-size: 90px;
+}
+
+.email {
+  margin: 50px 0px;
+}
+
+.discord {
+  font-size: 20px;
+  margin: 0px;
+  padding: 3px 10px;
+  border: 1px white solid;
+  border-radius: 9px;
+  width:fit-content;
+  background-color: white;
+  animation: bliker 3s linear infinite;
+}
+
+@keyframes bliker {
+  50% {
+    opacity: 0;
+  }
+}
+
+section .air{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+  background-size: 1000px 100px
+}
+
+section .air.air1{
+  animation: wave 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .air.air2{
+  animation: wave2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .air.air3{
+  animation: wave 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .air.air4{
+  animation: wave2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes wave{
+  0%{
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes wave2{
+  0%{
+    background-position-x: 0px;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+@media only screen and (max-device-width: 480px) {
+
+  h1 {
+    font-size: 30px;
+    margin: 10px 0px;
+  }
+
+  a {
+    text-decoration-line: none;
+  }
+
+  .main {
+    display: grid;
+    gap: 30px;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+    width: auto;
+    height:max-content;
+    justify-items: center;
+  }
+
+  .banner {
+    margin: 20px 0px;
+    font-size: 40px;
+  }
+
+  .email {
+    margin: 30px 0px;
+  }
+
+
+  .discord {
+    font-size: 20px;
+    margin: 0px;
+    padding: 3px 10px;
+    border: 1px white solid;
+    border-radius: 9px;
+    width:fit-content;
+    background-color: white;
+    color: red;
+    animation: bliker 3s linear infinite;
+  }
+
+
+
+}
